@@ -10,6 +10,8 @@ import androidx.room.RoomDatabase
     version = 1
 )
 abstract class NotesDatabase: RoomDatabase() {
+    abstract fun noteDao(): NoteDao
+
     abstract val dao: NoteDao
 /*
     //allows access to methods to create/get the the database and uses db class as qualifier
